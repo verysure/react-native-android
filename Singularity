@@ -8,7 +8,7 @@ From: ubuntu:bionic
 %post
     dpkg --add-architecture i386
     apt-get -qq update --fix-missing 
-    apt-get install -yq wget curl software-properties-common adb
+    apt-get install -yq wget curl software-properties-common adb git
     apt-get install -yq libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386 x11-apps
 
     # install nodejs
